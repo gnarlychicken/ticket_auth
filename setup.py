@@ -8,4 +8,4 @@ setup(
     author='Gnarly Chicken',
     author_email='gnarlychicken@gmx.com',
     test_suite='tests',
-    license='BSD')
+    license='MIT')
