@@ -104,7 +104,7 @@ class TicketFactory(object):
         parts = self.parse(ticket)
 
         # Check if our ticket matches
-        new_ticket = self.new(*(parts[1:]), client_ip, encoding)
+        new_ticket = self.new(*(parts[1:]), client_ip=client_ip, encoding=encoding)
 
         if new_ticket[:self._hash.digest_size * 2] != parts.digest:
             raise TicketDigestError(ticket)
