@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="ticket_auth",
-    version='0.1.1',
+    version='0.1.2',
     description='Ticket authentication system similar to mod_auth_tkt used by Apache',
     packages=['ticket_auth'],
     author='Gnarly Chicken',
