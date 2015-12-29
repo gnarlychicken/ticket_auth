@@ -13,7 +13,7 @@ Usage
 
 The general format for using the library is to instantiate the ticket factory
 used to generate the tickets, and then create new tickets or validate existing
-tickets using that factory. For example:
+tickets using that factory. For example::
 
     # The ticket factory takes a bytes argument specifying the secret
     # identifier, and a optional algorithm (defaults to sha512). Possible
@@ -32,7 +32,7 @@ tickets using that factory. For example:
 
 Tickets can also be bound to a particular client ip address by passing a
 ip address like object (either string, or from module ip_address) as the
-client_ip argument when creating and validating the string. For example:
+client_ip argument when creating and validating the string. For example::
 
     valid_until = time.time() + 60
     ticket = factory.new('test_id', valid_until=valid_until,
@@ -42,7 +42,7 @@ client_ip argument when creating and validating the string. For example:
 
 A sequence of tokens can also be passed, which will be added to the ticket.
 Note that these tokens (like the user id and user data) are stored in plain
-text format.
+text format::
 
     ticket = factory.new('test_id', valid_until=valid_until, tokens=('a', 'b'),
                          user_data='some data')
