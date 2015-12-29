@@ -1,10 +1,11 @@
 from setuptools import setup
 
-
 setup(
     name="ticket_auth",
-    version='0.1.2',
+    version='0.1.3',
     description='Ticket authentication system similar to mod_auth_tkt used by Apache',
+    setup_requires=['setuptools-markdown'],
+    long_description=open('README.rst').read(),
     packages=['ticket_auth'],
     author='Gnarly Chicken',
     author_email='gnarlychicken@gmx.com',
